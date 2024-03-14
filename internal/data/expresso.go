@@ -110,7 +110,7 @@ func (e *ExpressoMachine) BrewCoffee(ord string) {
 		e.TotalMilk -= milkPerCappuccino
 		e.TotalCoffeeBeans -= beansPerCappuccino
 		e.TotalCash += costPerCappuccino
-	case "back":
+	case "4":
 		act := action.GetUserAction()
 		e.ProcessUserAction(act)
 	}
